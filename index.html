@@ -4,79 +4,117 @@
     <meta charset="utf-8">
     <title>Student I.D. Barcode Scanner</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+  
+  
   </head>
   
     
-  <body onload="myFunction()" >
+     
+    <body>
     <header class="top-navbar">
       <div class="container">
-        <div class="call-us">Call us on 01522 688933</div>
-        <ul class="top-navbar-list">
-          <li><a href="mailto:hayden@haydencoe.co.uk">Contact</a></li>
-          <!-- <li><a href="#friends">Friends</a></li> -->
+        <div class="call-us">Call us on 01522 688988</div>
+          <ul class="top-navbar-list">
+           <li><a href="mailto:hayden@haydencoe.co.uk">Contact</a></li>
           
-        </ul>
+          </ul>
       </div>
     </header>
+    
     <div class="container">
 
-      <h1 class="main-title">Student I.D. Barcode Scanner<span></span></h1>
+    <h1 class="main-title">Student I.D. Barcode Scanner<span></span></h1>
 
       <ul class="nav nav-tabs">
         <li class="active"><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="videos.html">Videos</a></li>
-        <li><a href="store.html">Store</a></li>
+        <li><a href="helpPage.html">Help Page</a></li>
       </ul>
 
 
-
-
-
-
-
-      <div id="slideshow"> 
-         <div>
-          
+       <div id="slideshow"> 
          
-         <div id="camcontainer">
-  <!--<div class="row"> -->
-   <!-- <div class="col-sm-6"> -->
-     
+           
+                 
+          <div>                
+               
+             
+             <div id="studentDetails" >   
+                 <p> Student Details:</p>
+                
+                         
+                <p id="">Student Name:</p>
+                <ul id="decodeders"></ul>
+
+                <p id="">Student Number:</p>
+                <ul id="decoded"></ul>
+
+             </div><!-- End of Student Dtails -->
+               
+               
+               
+               <video autoplay></video>
+               <div id="inner"></div>
+               <div id="redline"></div>
+               
+               <div >
+               
+                  <button style="height:50px; width: 395px;" class="button" onclick="myFunction()">Scan Now!</button>
+            
+               </div>
       
-      <video controls autoplay style="height:180px; width: 240px;"></video>
-     
-    </div>
-    
-    
-    
-      <!--</div>-->
-<!--</div>-->
+      
+               <canvas style="display:none;"></canvas> 
+            
+            
+           </div>                       
+           
+           
+           
+           
+       
+           
+       
+       </div>    <!-- end of slideshow-->
+            
+            
+      <div style="text-align: center;"></div>   
+
          
-        
-          
-          <h3></h3>
-          <h4></h4>
-         </div>
-        
-         <div style="text-align: center;">
-           <h5></h5>
-                  
-                  
-                  
-                    
-        </div>
- 
- 
- 
- </div> 
+  
+       
+
+        <!--Stuff for displaying the timetable-->
+      
+        <div id="timeTableHolder"> 
+     
+            <div id="appearHere">
+	         
+	           <div id="emptyTimetable" class="unhidden">
+    
+                 <h6> Time table will appear here.</h6> 
+   
+               </div>
+           
+               <div id="HND2Timetable" class="hidden">
+    
+                 <img src="HND2Timetable.JPG" height="420" width="840">
+   
+               </div>
 
      
-      <section>
-
-       <button class="button" onclick="getStream('video')">Scan Now!</button>
-
-        <h2></h2>
+               <div id="HNC2Timetable" class="hidden">
+    
+                 <img src="HNC2Timetable.JPG" height="420" width="840">
+   
+               </div>
+  
+            </div> <!-- End of appearHere -->
+   
+        </div> <!-- End of timeTable Holder --> 
+   
+   
+         
 
     <footer>
       <div class="container">
@@ -91,5 +129,9 @@
  
         
   </body>
+  
+
+  
 </html>
+
 
