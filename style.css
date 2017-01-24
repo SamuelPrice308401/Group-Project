@@ -17,27 +17,6 @@ body {
 
 
 
-/*
-#studentDetails > div {
-
-    border-radius: 5px;
-    border-collapse: collapse;
-    border: 1px solid gray;
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left:  auto;
-    margin-bottom: 20px;
-    
-    width: 80px;
-    height: 50px;
-
-   float:right;
-
-
-}
-*/
-
-
 #appearHere > div {
     /*text-align: center;*/
     
@@ -96,9 +75,6 @@ h1, h2, h3, h4, h5 {
 }
 
 
-
-
-
 h2 {
   margin: 20px 0;
 }
@@ -129,8 +105,6 @@ p {
     height: 180px;
     width: 240px;
 }
-
-
 
 
 
@@ -368,7 +342,7 @@ h1 span {
 /* Slideshow for daily deals */
 #slideshow{
     position: relative;
-    height: 420px;
+    height: 450px;
     margin: 10px 0;
 }
 
@@ -385,7 +359,7 @@ h1 span {
     margin-bottom: 50px;
     float: right;
     width: 100%;
-    height: 420px;
+    height: 450px;
     /*text-align: center;*/
 }
 
@@ -462,7 +436,7 @@ h1 span {
     
     margin: 20 px;
     
-    margin-bottom: 20px;
+    margin-bottom: 0px;
      
     margin-left: 20px;
 
@@ -656,11 +630,11 @@ ul#decodeders li
 	      top: 0; 
 	      left: 0; 
 	      width: 395px; 
-	      height: 305px; 
+	      height: 260px; 
 	      
 	      
 	      margin-top: 20px;
-          margin-left: 20px;
+          margin-left:20px;
           margin-right: 20px;
           margin-bottom: 20px;
 	     
@@ -678,7 +652,7 @@ ul#decodeders li
           top: 0; left: 0;
           
           width: 335px;
-          height: 245px;
+          height: 200px;
           border: 30px solid rgba(64,64,64, 0.5);
           border-radius: 5px;
           zindex: 1000;
@@ -714,8 +688,8 @@ ul#decodeders li
     margin-left:  20px;
     margin-bottom: 20px;
     
-    width: 395px;
-    height: 335px;
+    width: 450px;
+    height: 215px;
     
     padding: 20px;
     
@@ -726,3 +700,353 @@ ul#decodeders li
 
 
 
+div#panel {
+          
+          margin-top: 20px;
+          margin-left: 20px;
+          margin-right: 20px;
+          margin-bottom: 40px;
+          
+          position: absolute;
+          top: 0; left: 0;
+          
+          width: 315px;
+          height: 200px;
+          border: 1px solid rgba(64,64,64, 0.5);
+          border-radius: 5px;
+          
+          
+          display: none;
+          
+          padding: 40px;
+                    
+        }
+
+h7 {
+	
+	color: black;
+    margin: 20px 0 20px 0;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    
+	
+}
+
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+button#scan {
+	
+	position: absolute;
+    bottom: 20px;
+	margin-top: 20px;
+}
+
+button#type {
+	
+	position: absolute;
+    bottom: 20px;
+    left: 207.5px;
+	margin-top: 20px;
+
+
+}
+
+
+button#cam {
+	
+	position: absolute;
+    bottom: 90px;
+    left: 0px;
+	margin-top: 0px;
+
+
+}
+
+/* Button Stuff ................................................................  */
+	
+/*	
+	@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+
+body {
+  /*font-family: "Roboto";
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+*/
+
+.center {
+  /*width: 100vw;
+  height: 100vh;
+  display: table;
+  box-sizing: border-box;*/
+  
+  padding 0px;
+  display: inline-block;
+
+  margin-left: 20px;
+}
+
+.active {
+	
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
+     box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
+
+	/*pointer-events:none;*/
+	
+	}
+
+
+.btn-container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.btn {
+  
+ 
+  
+  background-color: #009ED8;
+  position: relative;
+  margin: 10px auto;
+  
+   margin-right: 20px;
+  
+  border-radius: 50px;
+  
+  /*border-color: white;
+  border-width: 2px;*/
+  
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  padding: 18px;
+  box-shadow: 0px 0px 0px 3px white;
+  color: white;
+  transition-property: width;
+  transition-duration: .2s;
+}
+
+.btn:hover {
+  width: 146px;
+  box-shadow: 0px 0px 0px 3px white;
+}
+
+.btn:hover .share-label {
+  top: 3px;
+  opacity: 1;
+  transition-property: top, opacity;
+  transition-duration: 0.5s;
+  transition-delay: .3s;
+}
+
+.share-label {
+  margin-left: 33px;
+  top: 10px;
+  opacity: 0;
+  position: relative;
+}
+
+.share-label span {
+  color: white;
+  font-size: 30px;
+}
+
+.share-icon {
+  position: absolute;
+  top: 16px;
+  left: 18px;
+}
+
+.btn i {
+  font-size: 34px;
+}	
+
+/*.................................................*/	
+	
+div#btn2 {
+  
+  background-color: #647074;
+  position: relative;
+  margin: 10px auto;
+  margin-right: 20px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  padding: 18px;
+  box-shadow: 0px 0px 0px 3px white;
+  color: white;
+  transition-property: width;
+  transition-duration: .2s;
+  
+  border-color: red;
+  border-width: 5px;
+  
+  
+  
+    
+    /*
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(255, 255, 190, .75);
+    -moz-box-shadow: 0px 0px 30px 10px rgba(255, 255, 190, .75);
+     box-shadow: 0px 0px 30px 10px rgba(255, 255, 190, .75);
+  
+   pointer-events:none;
+
+   */
+}
+	
+	
+div#btn-container2 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+ 
+
+}
+	
+div#btn2:hover {
+  width: 146px;
+  box-shadow: 0px 0px 0px 3px white;
+}
+
+div#btn2:hover .share-label {
+  top: 3px;
+  opacity: 1;
+  transition-property: top, opacity;
+  transition-duration: 0.5s;
+  transition-delay: .3s;
+}
+	
+div#btn2 i {
+  font-size: 34px;
+}	
+
+/*.................................................*/
+
+div#btn3 {
+  
+  background-color: #F84545;
+  position: relative;
+  margin: 10px auto;
+  margin-right: 20px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  padding: 18px;
+  box-shadow: 0px 0px 0px 3px white;
+  color: white;
+  transition-property: width;
+  transition-duration: .2s;
+  
+   
+}
+	
+	
+div#btn-container3 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+ 
+
+}
+	
+	div#btn3:hover {
+  width: 146px;
+  box-shadow: 0px 0px 0px 3px white;
+}
+
+div#btn3:hover .share-label {
+  top: 3px;
+  opacity: 1;
+  transition-property: top, opacity;
+  transition-duration: 0.5s;
+  transition-delay: .3s;
+}
+	
+	div#btn3 i {
+  font-size: 34px;
+}		
+	
+/*....................................................*/	
+	
+	.btn4 {
+  
+  background-color: #00B050;
+  position: relative;
+  margin: 10px auto;
+  margin-right: 20px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  padding: 18px;
+  box-shadow: 0px 0px 0px 3px white;
+  color: white;
+  transition-property: width;
+  transition-duration: .2s;
+  
+   
+}
+	
+	
+.btn-container4 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+ 
+
+}
+	
+	.btn4:hover {
+  width: 146px;
+  box-shadow: 0px 0px 0px 3px white;
+}
+
+.btn4:hover .share-label {
+  top: 3px;
+  opacity: 1;
+  transition-property: top, opacity;
+  transition-duration: 0.5s;
+  transition-delay: .3s;
+}
+	
+	.btn4 i {
+  font-size: 34px;
+}		
+	
+	
+
+	
