@@ -2,6 +2,190 @@
 
             
 
+ //Button Animation Stuff
+ 
+ $(document).ready(function() {  
+            
+            
+    $("#btn2").click(function(){
+        
+     
+        $("#inner").slideUp(500);
+        $("#redline").slideUp(500);
+               
+        $("#panel").delay(500).slideDown(500);
+   
+    
+    });
+
+
+     $(".btn").click(function(){
+        
+        $("#panel").slideUp(500);
+        $("#inner").delay(500).slideDown(500);
+        $("#redline").delay(500).slideDown(500);
+        
+        //$("#cam").delay(1000).show("slow");
+    
+    
+    });
+
+            
+           
+            
+            
+            //Type button
+            $("#btn2").click(function () {
+               
+             
+             //$(".selected").removeClass("selected");
+             $(this).addClass("active");
+             
+            //$("#btn2").addClass('.active');
+              
+             
+             
+             //Hide all 4 
+            
+
+             $('#btn3').animate({
+                 'marginLeft' : "-=0px" //moves left
+                });
+             
+             $('.btn4').animate({
+                 'marginLeft' : "-=108px" //moves left
+                });
+             
+              $('.btn').animate({
+                 'marginLeft' : "-=110px" //moves left
+                });
+             
+             
+             
+             $('#btn2').animate({
+                 'marginLeft' : "-=110px" //moves left
+                });
+             
+               
+               //$(".btn-container3").delay(500).hide( "fast" ); 
+               //$(".btn-container4").delay(500).hide("fast" );
+				
+         
+         
+         
+          //Show the 2
+          $('.btn').delay(300).animate({
+                 'marginLeft' : "+=0px" //moves left
+                });
+
+             
+             $('#btn2').delay(300).animate({
+                 'marginLeft' : "+=110px" //moves left
+                });
+         
+         
+
+         
+         
+           });
+         
+         
+         
+         
+         
+         
+            //Scan button
+            $(".btn").click(function () {
+               
+                //$(".btn-container3").delay(0).show( "fast" );
+               
+               //$(".btn-container4").delay(0).show("fast" );
+
+               
+               
+               
+            //Hide the 2
+                          
+             $('.btn').animate({
+                 'marginLeft' : "-=0px" //moves left
+                });
+
+             
+             $('#btn2').animate({
+                 'marginLeft' : "-=110px" //moves left
+                });
+             
+               
+                        
+				
+          //Show all 4
+         
+            /* 
+             $('.btn3').animate({
+                 'marginLeft' : "+=0px" //moves right
+                });
+             */
+             
+             $('#btn2').delay(500).animate({
+                 'marginLeft' : "+=110px" //moves right
+                });
+                    
+             
+
+             $('.btn').delay(700).animate({
+                 'marginLeft' : "+=110px" //moves right
+                });
+
+                         
+             $('.btn4').delay(900).animate({
+                 'marginLeft' : "+=110px" //moves right
+             
+                });
+         
+         
+           });
+         
+         
+         });
+
+
+
+
+
+//JQueary for switching from type/scan
+  
+$(document).ready(function(){
+    $("#btn").click(function(){
+        
+        //$("#cam").fadeOut(1000);
+        $("#cam").hide("slow");
+
+                
+       
+        $("#inner").slideUp(1000);
+        $("#redline").slideUp(1000);
+               
+        $("#panel").delay(1000).slideDown(1000);
+   
+    
+    });
+
+
+     $(".btn2").click(function(){
+        $("#panel").slideUp(1000);
+        $("#inner").delay(1000).slideDown(1000);
+        $("#redline").delay(1000).slideDown(1000);
+        
+        $("#cam").delay(1000).show("slow");
+    
+    
+    });
+
+
+});  
+  
+ 
+ 
 
 
 $(window).scroll(function() {
@@ -84,14 +268,26 @@ function getStream(type) {
 //TRIAL STUFF***************************************************************************************************
 
 
+function stopCamFunction() {  //button click "Stop"
+
+//alert("Hello! I am an alert box!!");
+
+var localStream;
+
+
+localStream.getTracks().forEach(function(track) { track.stop() }) //Stops the camera stream
 
 
 
+}
 
-function myFunction() {  //button click "Scan Now!"
+
+function myFunction() {  //button click "Start"
+  
+  
+      
     
-    
-       // alert("Hello! I am an alert box!!");
+    //    alert("Hello! I am an alert box!!");
        
         var localStream;
 
@@ -323,3 +519,24 @@ function myFunction() {  //button click "Scan Now!"
         
 
         } //end of myFunction
+        
+        
+        
+        function validateForm() {
+          var x = document.forms["myForm"]["fname"].value;
+          
+          if (x == "") 
+          {
+          alert("Name must be filled out");
+          return false;
+          }
+         
+         
+         }
+         
+         
+         
+         
+         
+         
+         
